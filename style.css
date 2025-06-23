@@ -4,9 +4,9 @@
 	--color-foreground: #333;
 	--color-highlight: #ccc;
 }
+html { color: var(--color-foreground); background-color: var(--color-background); font: 18px/1.5 Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; }
 a { color: var(--color-link); }
-html { color: var(--color-foreground); background-color: var(--color-background); font: 22px/1.5 Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; }
-pre { font-size:0.9rem; text-wrap:wrap; padding-left: 1rem; border-left: 1px solid var(--color-highlight); }
+pre { font-size:0.8rem; text-wrap:wrap; padding-left: 1rem; border-left: 1px solid var(--color-highlight); }
 details ul { margin-left: 0.5rem; padding-left: 0; }
 summary::marker { color: var(--color-highlight); }
 details cite { margin-left: 1rem; }
