@@ -10,4 +10,4 @@ Atjauno datus no [akordi.lv](https://akordi.lv) API:
 
 Uzģenerē jaunu HTML lapu no API datiem:
 
-    php template.php > public/index.html
+    php template.php > docs/index.html
