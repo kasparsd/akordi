@@ -1,0 +1,30 @@
+:root {
+	--color-background: #fff;
+	--color-foreground: #333;
+	--color-highlight: #ccc;
+}
+html { color: var(--color-foreground); background-color: var(--color-background); font: 22px/1.5 Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; }
+pre { font-size:0.9rem; text-wrap:wrap; padding-left: 1rem; border-left: 1px solid var(--color-highlight); }
+details ul { margin-left: 0.5rem; padding-left: 0; }
+summary::marker { color: var(--color-highlight); }
+details cite { margin-left: 1rem; }
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-background: #181a1b;
+		--color-foreground: #e8e6e3;
+		--color-highlight: #444;
+	}
+}
+
+@media print {
+	body { font-size: 16px; }
+	h1 { display: none; }
+	pre { font-size: inherit; columns: 2; }
+	summary { display: none; }
+	details details { display: block; }
+}
+
+@media (min-width: 800px) {
+	pre { columns: 2; }
+}
