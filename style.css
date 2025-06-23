@@ -1,8 +1,10 @@
 :root {
+	--color-link: #0077cc;
 	--color-background: #fff;
 	--color-foreground: #333;
 	--color-highlight: #ccc;
 }
+a { color: var(--color-link); }
 html { color: var(--color-foreground); background-color: var(--color-background); font: 22px/1.5 Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; }
 pre { font-size:0.9rem; text-wrap:wrap; padding-left: 1rem; border-left: 1px solid var(--color-highlight); }
 details ul { margin-left: 0.5rem; padding-left: 0; }
