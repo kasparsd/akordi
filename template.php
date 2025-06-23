@@ -20,23 +20,24 @@ $data = $akordi->template_data();
 </head>
 <body>
 	<h1>Latviešu dziesmu akordi</h1>
-	<p>Izejas kods: <a href="https://github.com/kasparsd/akordi">github.com/kasparsd/akordi</a></p>
 
-	<nav>
-		<?php foreach ( $data['authors'] as $author ) : ?>
-		<details id="autors--<?= esc_attr( $author['slug'] ); ?>">
-			<summary><?= esc_html( $author['name'] ); ?></summary>
-			<ul>
-				<?php foreach ( $author['songs'] as $song ) : ?>
-				<details id="dziesma--<?= esc_attr( $song['slug'] ); ?>">
-					<summary><?= esc_html( $song['title'] ); ?></summary>
-					<cite><?= esc_html( $author['name'] ); ?></cite>
-					<pre><?= esc_html( $song['chords'] ); ?></pre>
-				</details>
-				<?php endforeach; // author songs ?>
-			</ul>
-		</details>
-		<?php endforeach; // authors ?>
-	</nav>
+	<?php foreach ( $data['authors'] as $author ) : ?>
+	<details id="autors--<?= esc_attr( $author['slug'] ); ?>">
+		<summary><?= esc_html( $author['name'] ); ?></summary>
+		<ul>
+			<?php foreach ( $author['songs'] as $song ) : ?>
+			<details id="dziesma--<?= esc_attr( $song['slug'] ); ?>">
+				<summary><?= esc_html( $song['title'] ); ?></summary>
+				<cite><?= esc_html( $author['name'] ); ?></cite>
+				<pre><?= esc_html( $song['chords'] ); ?></pre>
+			</details>
+			<?php endforeach; // author songs ?>
+		</ul>
+	</details>
+	<?php endforeach; // authors ?>
+
+	<footer>
+		<p>Izejas kods: <a href="https://github.com/kasparsd/akordi">github.com/kasparsd/akordi</a></p>
+	</footer>
 </body>
 </html>
